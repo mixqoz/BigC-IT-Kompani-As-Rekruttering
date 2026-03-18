@@ -1,0 +1,18 @@
+services:
+
+  app:
+    build: .
+
+    image: BigC-IT_quiz_app:1.0
+
+    container_name: BigC-IT_quiz
+    ports:
+      - "5000:1040"
+
+    volumes:
+      - .:/app
+
+    environment:
+      - FLASK_ENV=development 
+
+    restart: unless-stopped

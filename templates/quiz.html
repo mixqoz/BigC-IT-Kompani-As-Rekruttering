@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="{{ url_for('static', filename='quiz.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='quizStyle.css') }}">
+	<title>The Ultimate CSGO Quiz</title>
+</head>
+<body>
+	<header>
+		<h1 class="title"><u>Are you a Counter Strike 2 expert?</u></h1>
+	</header>
+
+	<section>
+		<h4>Are you better than the other 1.5 million users playing CS:GO2?</h4>
+		<br>
+		<p>Test yourself now!</p>
+		<button id="startBtn">Start Quiz</button>
+	</section>
+
+	<!-- QUIZ Panell -->
+	<div class="modalContainer" id="modal_Container">
+		<div class="modal">
+			<div class="modalHeader">
+				<button id="closeBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#001d3d"><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/>
+				<path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2"/></svg></button>
+				<h1>CS:GO2 Quiz</h1>
+			</div>
+			<div class="modalBody">
+				<h2 id="question">Question</h2>
+				<div id="answerBtns">
+					<button class="btn">Answer 1</button>
+					<button class="btn">Answer 2</button>
+					<button class="btn">Answer 3</button>
+					<button class="btn">Answer 4</button>
+				</div>
+				<div id="nextBtn">Next</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
