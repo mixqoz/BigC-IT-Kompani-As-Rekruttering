@@ -1,92 +1,92 @@
 const questions = [
 	{
-		question: "What's the maximum round time in standard competetive CS:GO2?",
+		question: "Hva er hovedmålet med IT-support i et kundemiljø?",
 		answers: [
-			{ text: "2 minutes", correct: false},
-			{text: "1 minute and 55 seconds", correct: true},
-			{text: "1 minute and 45 seconds", correct: false},
-			{text: "1 minute and 30 seconds", correct: false},
+			{ text: "Å utvikle ny produkter", correct: false},
+			{text: "Å løse tekniske problemer og hjelpe brukere", correct: true},
+			{text: "Å selge IT-utstyr", correct: false},
+			{text: "Å overvåke nettverket", correct: false},
 		]
 	},
 	{
-		question: "What is the name of the bombsites on Mirage?",
+		question: "Hva betyr begrepet 'feilsøking'?",
 		answers: [
-			{ text: "Mid & Top-Mid", correct: false},
-			{text: "A & C", correct: false},
-			{text: "A & B", correct: true},
-			{text: "B & C", correct: false},
+			{ text: "Å lage nye funksjoner", correct: false},
+			{text: "Å identifisere og løse problemer", correct: true},
+			{text: "Å slette gamle filer", correct: false},
+			{text: "Å oppdatere programvare", correct: false},
 		]
 	},
 	{
-		question: "How many players are there on each team?",
+		question: "Hva er viktigst når du kommuniserer med en kunde som opplever et problem?",
 		answers: [
-			{ text: "8", correct: false},
-			{text: "7", correct: false},
-			{text: "6", correct: false},
-			{text: "5", correct: true},
+			{ text: "Be kunden finne løsningen selv", correct: false},
+			{text: "Holde samtalen kort og skarp", correct: false},
+			{text: "Vise tålmodighet og forklare tydelig", correct: true},
+			{text: "Bruke avansert teknisk språk", correct: false},
 		]
 	},
 	{
-		question: "How long does it take to defuse a bomb with a kit?",
+		question: "Hva er en 'ticket' i IT-support?",
 		answers: [
-			{ text: "10 seconds", correct: false},
-			{text: "8 seconds", correct: false},
-			{text: "5 seconds", correct: true},
-			{text: "3 seconds", correct: false},
+			{ text: "En registrert sak om et problem", correct: true},
+			{text: "En type datavirus", correct: false},
+			{text: "En programvareoppdatering", correct: false},
+			{text: "En teknisk feil", correct: false},
 		]
 	},
 	{
-		question: "Which rifle has the highest armor penetration?",
+		question: "Hva er en vanlig årsak til at en PC blir treg?",
 		answers: [
-			{text: "FAMAS", correct: false},
-			{text: "AK-47", correct: false},
-			{text: "AWP", correct: true},
-			{text: "M4A4", correct: false},
+			{text: "For mye ledig minne", correct: false},
+			{text: "For mange programmer åpent samtidig", correct: true},
+			{text: "For rask internettlinje", correct: false},
+			{text: "For ny maskin", correct: false},
 		]
 	},
 	{
-		question: "Which grenade can extinguish a molotov?",
+		question: "Hva står 'VPN' for?",
 		answers: [
-			{text: "Smoke", correct: true},
-			{text: "HE Grenade", correct: false},
-			{text: "Flashbang", correct: false},
-			{text: "Decoy", correct: false},
+			{text: "Virtual Private Network", correct: true},
+			{text: "Visual Personal Number", correct: false},
+			{text: "Variable Protocol Network", correct: false},
+			{text: "Virtual Processing Number", correct: false},
 		]
 	},
 	{
-		question: "How much does a Zeus cost?",
+		question: "Hvorfor er datasikkerhet viktig for et IT-selskap?",
 		answers: [
-			{text: "500", correct: false},
-			{text: "400", correct: false},
-			{text: "300", correct: false},
-			{text: "200", correct: true},
+			{text: "For å gjøre PC-er raskere", correct: false},
+			{text: "For å redusere strømbruk og kostnader", correct: false},
+			{text: "For å unngå programvareoppdateringer", correct: false},
+			{text: "For å beskytte sensitive data", correct: true},
 		]
 	},
 	{
-		question: "Which map has the fastest rotation time between both bombsites?",
+		question: "Hva er god praksis når du ikke vet svartet på et kundespørsmål?",
 		answers: [
-			{text: "Aincent", correct: false},
-			{text: "Dust II", correct: false},
-			{text: "Nuke", correct: true},
-			{text: "Anubis", correct: false},
+			{text: "Gjette og håpe at det stemmer", correct: false},
+			{text: "Si at du ikke kan hjelpe og avslutt samtalen", correct: false},
+			{text: "Si at du skal undersøke og komme tilbake til dem", correct: true},
+			{text: "Ignorere spørsmålet", correct: false},
 		]
 	},
 	{
-		question: "What is the cost of firing a single M249 bullet?",
+		question: "Hva er en 'server'?",
 		answers: [
-			{text: "17", correct: true},
-			{text: "15", correct: false},
-			{text: "12", correct: false},
-			{text: "10", correct: false},
+			{text: "En datamaskin som tilbyr tjenester til andre enheter", correct: true},
+			{text: "En ekstern harddisk brukt til tung last", correct: false},
+			{text: "En nettverksprotokoll", correct: false},
+			{text: "En database med all informasjon", correct: false},
 		]
 	},
 	{
-		question: "What is the maximum round loss bonus?",
+		question: "Hva kjennetegner en god IT-konsulent?",
 		answers: [
-			{text: "$3500", correct: false},
-			{text: "$3400", correct: true},
-			{text: "$3300", correct: false},
-			{text: "$3200", correct: false},
+			{text: "Jobber godt alene", correct: false},
+			{text: "Sterke problemløsningsevner og kunebehandling", correct: true},
+			{text: "Relevant utdanning innenfor IT", correct: false},
+			{text: "Ignorerer kundens behov og preferanser", correct: false},
 		]
 	}
 ]
