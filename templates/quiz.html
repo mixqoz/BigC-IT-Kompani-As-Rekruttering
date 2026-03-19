@@ -5,6 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script defer src="{{ url_for('static', filename='quiz.js') }}"></script>
 	<link rel="stylesheet" href="{{ url_for('static', filename='quizStyle.css') }}">
+	
+	<link href="{{ url_for('static', filename='favicon_io/apple-touch-icon.png') }}">
+
+	<link rel="icon" type="image/x-icon" sizes="32x32" href="{{ url_for('static', filename='favicon_io/favicon-32x32.png') }}">
+	<link rel="icon" type="image/x-icon" sizes="16x16" href="{{ url_for('static', filename='favicon_io/favicon-16x16.png') }}">
+	<link rel="manifest" href="{{ url_for('static', filename='favicon_io/site.webmanifest') }}">
+
 	<title>Er du en av våre fremtidige ansatte?</title>
 </head>
 <body>
@@ -33,10 +40,16 @@
 					<button class="btn">Answer 3</button>
 					<button class="btn">Answer 4</button>
 				</div>
+				<br>
 				<div id="nextBtn">Next</div>
+				<div id="recruitBtn">Søk hos oss</div>
 			</div>
 		</div>
 	</div>
+
+	<script>
+    	const recruitmentUrl = "{{ url_for('recruitment') }}";
+	</script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@ services:
   app:
     build: .
 
-    image: BigC-IT_quiz_app:1.0
+    image: bigc-it_quiz_app:1.0
 
     container_name: BigC-IT_quiz
     ports:
@@ -15,4 +15,4 @@ services:
     environment:
       - FLASK_ENV=development 
 
-    restart: unless-stopped
+    restart: no

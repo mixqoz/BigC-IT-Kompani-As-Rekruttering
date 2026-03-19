@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: Nunito Sans, sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #344059;
     padding: 0;
     width: 100%;
@@ -26,7 +26,7 @@ header {
 	position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: #d4ccc5;
+    color: white;
     font-size: clamp(24px, 6vw, 48px);
     letter-spacing: 2px;
 	text-align: center;
@@ -47,11 +47,6 @@ section {
 	gap: 2%;
 }
 
-h4 {
-	font-size: clamp(15px, 5vw, 25px);
-	letter-spacing: 0.50px;
-}
-
 p {
 	font-size: clamp(15px, 5vw, 25px);
 }
@@ -64,12 +59,18 @@ p {
 	background-color: #D99177;
 	padding: 20px;
 	width: 15%;
+	min-width:180px;
 	text-align: center;
 	border-width: 1px;
 	border-radius: 5px;
 	flex-wrap: wrap;
 	box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
 	letter-spacing: 2px;
+}
+
+#startBtn:hover {
+	background-color: #da967d;
+	box-shadow:0 12px 24px 0 rgba(0,0,0,0.6);
 }
 
 .modalContainer {
@@ -101,7 +102,7 @@ p {
 
 .modal {
 	background-color: #dad6d6;
-	width: 800px;
+	width: 700px;
 	max-width: 100%;
 	padding: 30px 50px;
 	border-radius: 5px;
@@ -167,10 +168,28 @@ p {
 	display: none;
 }
 
+#recruitBtn {
+	background-color: #001e4d;
+	color: #fff;
+	font-weight: 500;
+	width: 150px;
+	border: 0;
+	padding: 10px;
+	margin: 20px auto 0;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+}
+
 .correct{
 	background: #9aeabc;
 }
 
 .incorrect{
 	background: #ff9393;
+}
+
+#recruitBtn {
+	display:none;
 }

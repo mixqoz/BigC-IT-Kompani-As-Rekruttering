@@ -99,10 +99,12 @@ const questions = [
 const startBtn = document.getElementById("startBtn");
 const modal_Container = document.getElementById("modal_Container");
 const closeBtn = document.getElementById("closeBtn");
+
 // Other html IDs
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answerBtns");
 const nextButton = document.getElementById("nextBtn");
+const referalBtn = document.getElementById("recruitBtn");
 
 // Reveals the modal
 startBtn.addEventListener("click", () => {
@@ -132,6 +134,12 @@ function startQuiz(){
 	showQuestion();
 }
 
+// When the referal button is clicked, redirects user to recruit. page
+referalBtn.addEventListener("click", () => {
+	window.location.href = recruitmentUrl;
+});
+
+
 // Shows questions
 function showQuestion(){
     resetState(); // Clears previous answers and hides the Next button
@@ -157,6 +165,7 @@ function showQuestion(){
 // Resets the quiz to the start
 function resetState(){
 	nextButton.style.display = "none";
+	referalBtn.style.display = "none";
 	while(answerButtons.firstChild){
 		answerButtons.removeChild(answerButtons.firstChild);
 	}
@@ -186,11 +195,21 @@ function selectAnswer(e){
 }
 
 // Shows result score at the end
-function showScore(){
-	resetState(); // Clears and hides all buttons
-	questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-	nextButton.innerHTML = "Play again"; // Changed Next button to Play Again
-	nextButton.style.display = "block";
+function showScore() {
+    resetState(); // Clears answer buttons
+
+    if (score > questions.length / 3) {
+        questionElement.innerHTML = `Fantastisk! Du scoret ${score} ut av ${questions.length} og har mulig kompetanse for en rolle hos oss!`;
+
+		referalBtn.innerHTML = "Søk hos oss";
+		referalBtn.style.display = "block";
+    
+    } else {
+        questionElement.innerHTML = `Du scoret ${score} ut av ${questions.length}. Det er en god start, men det kan være lurt å lære mer om IT-support for å forbedre sjansene dine hos oss!`;
+    }
+
+    nextButton.innerHTML = "Prøv igjen";
+    nextButton.style.display = "block";
 }
 
 // If there are remaining questions, shows them. Otherwise shows the score
