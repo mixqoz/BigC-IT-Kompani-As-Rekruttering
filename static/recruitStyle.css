@@ -15,7 +15,7 @@ header {
 }
 
 .title {
-  margin-top: 15%;
+  margin-top: 10%;
   color: white;
   font-size: clamp(24px, 6vw, 48px);
   letter-spacing: 2px;
@@ -40,8 +40,14 @@ h4 {
 }
 
 .tableSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tableSection table {
   border-collapse: collapse;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
